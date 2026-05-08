@@ -10,14 +10,8 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-/**
- * Centralized scene/screen switcher.
- *
- * <p>The Navigator owns the primary {@link Stage} and a single reusable
- * {@link Scene}, swapping the root {@link Parent} when changing screens.
- * That keeps transitions smooth and the global {@code style.css} stylesheet
- * applied across the entire app.</p>
- */
+ // Centralized scene/screen switcher.
+
 public final class Navigator {
 
     public static final String LOGIN = "/fxml/login.fxml";

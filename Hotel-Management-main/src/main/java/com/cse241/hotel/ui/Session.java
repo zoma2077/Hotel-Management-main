@@ -3,10 +3,7 @@ package com.cse241.hotel.ui;
 import com.cse241.hotel.model.user.Guest;
 import com.cse241.hotel.model.user.Staff;
 
-/**
- * Lightweight session holder for the currently authenticated guest.
- * Controllers read/write through static accessors; cleared on logout.
- */
+
 public final class Session {
     private static Guest currentGuest;
     private static Staff currentStaff;

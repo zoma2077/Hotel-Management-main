@@ -6,9 +6,7 @@ import javafx.scene.control.ButtonType;
 
 import java.util.Optional;
 
-/**
- * Thin wrapper around JavaFX {@link Alert} for consistent dialogs across screens.
- */
+
 public final class Dialogs {
     private Dialogs() {
     }
