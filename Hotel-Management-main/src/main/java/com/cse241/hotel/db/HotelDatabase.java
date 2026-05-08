@@ -37,8 +37,8 @@ public final class HotelDatabase {
         }
         SEEDED = true;
 
-        STAFF.add(new Admin("admin", "Admin1234", "09:00 - 17:00"));
-        STAFF.add(new Receptionist("reception", "Reception1", "08:00 - 16:00"));
+        STAFF.add(new Admin("Sara", "Admin@2026", "09:00 - 17:00"));
+        STAFF.add(new Receptionist("Ellie", "Ellie@2026", "08:00 - 16:00"));
 
         RoomType single = new RoomType("Single", new BigDecimal("80.00"), 1);
         RoomType doubleRoom = new RoomType("Double", new BigDecimal("120.00"), 2);
@@ -54,17 +54,17 @@ public final class HotelDatabase {
         ROOMS.add(new Room("301", suite, List.of(wifi, tv, minibar)));
 
         Guest g1 = new Guest(
-                "alice",
+                "Ahmed",
                 "Password1",
                 LocalDate.now().minusYears(25),
                 new BigDecimal("500.00"),
                 "Downtown Street 1",
-                Gender.FEMALE,
+                Gender.MALE,
                 List.of("Suite", "High floor")
         );
         Guest g2 = new Guest(
                 "bob",
-                "Secure123",
+                "bob@2026",
                 LocalDate.now().minusYears(30),
                 new BigDecimal("50.00"),
                 "Main Road 5",

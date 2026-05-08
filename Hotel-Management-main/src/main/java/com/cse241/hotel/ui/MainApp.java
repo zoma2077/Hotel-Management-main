@@ -4,9 +4,7 @@ import com.cse241.hotel.db.HotelDatabase;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-/**
- * JavaFX bootstrap entry point. Seeds dummy data and shows the login screen.
- */
+
 public class MainApp extends Application {
 
     @Override
