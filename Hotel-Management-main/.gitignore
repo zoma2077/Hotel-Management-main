@@ -1,0 +1,36 @@
+# --- OS / IDE metadata ---
+.DS_Store
+Thumbs.db
+
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+.classpath
+.project
+.settings/
+.factorypath
+
+# Cursor / AI tooling artifacts (keep out of repo)
+.cursor/
+agent-transcripts/
+
+# --- Build / tooling output ---
+target/
+out/
+build/
+bin/
+.gradle/
+
+# --- Logs / temp ---
+*.log
+*.tmp
+*.swp
+*.swo
+
+# --- Secrets / env files ---
+.env
+.env.*
+

@@ -1,0 +1,192 @@
+/* ----------- Hotel Management — global style sheet ----------- */
+
+.root {
+    -fx-font-family: "SF Pro Text", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #f4f6fb;
+    -fx-text-fill: #1f2433;
+}
+
+/* Page-level container used by full-screen views */
+.page {
+    -fx-background-color: linear-gradient(to bottom, #eef2fa, #ffffff);
+}
+
+/* Header bar shared by inner pages */
+.app-header {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #e2e6ef transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.header-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2433;
+}
+
+/* Auth screens (login, register) sit on the soft gradient */
+.auth-pane {
+    -fx-background-color: linear-gradient(to bottom right, #2c3e8f, #6a85f1 70%, #c1cdfb);
+}
+
+/* Wrap around content cards */
+.card-wrap {
+    -fx-alignment: center;
+}
+
+/* Generic surface card */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-effect: dropshadow(gaussian, rgba(28, 38, 88, 0.18), 16, 0.0, 0, 4);
+}
+
+.brand-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2433;
+}
+
+.brand-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #6c7591;
+}
+
+.section-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a3361;
+}
+
+.field-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4a5377;
+    -fx-font-weight: bold;
+}
+
+.muted {
+    -fx-text-fill: #6c7591;
+}
+
+/* ----------- Buttons ----------- */
+.button {
+    -fx-background-radius: 8;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.primary-button {
+    -fx-background-color: #3855d6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.primary-button:hover {
+    -fx-background-color: #2c45b8;
+}
+.primary-button:pressed {
+    -fx-background-color: #243a9c;
+}
+
+.secondary-button {
+    -fx-background-color: #e7ecff;
+    -fx-text-fill: #2a3361;
+    -fx-font-weight: bold;
+}
+.secondary-button:hover {
+    -fx-background-color: #d6deff;
+}
+
+.ghost-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2a3361;
+    -fx-border-color: #cdd3e6;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+.ghost-button:hover {
+    -fx-background-color: #eef1fa;
+}
+
+.danger-button {
+    -fx-background-color: #d64458;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.danger-button:hover {
+    -fx-background-color: #b6394b;
+}
+
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3855d6;
+    -fx-underline: true;
+    -fx-padding: 0;
+}
+.link-button:hover {
+    -fx-text-fill: #2c45b8;
+}
+
+/* ----------- Inputs ----------- */
+.text-field, .password-field, .date-picker, .choice-box {
+    -fx-background-color: #f7f9ff;
+    -fx-background-radius: 8;
+    -fx-border-color: #d8def0;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 6 10 6 10;
+}
+.text-field:focused, .password-field:focused, .date-picker:focused, .choice-box:focused {
+    -fx-border-color: #3855d6;
+}
+
+/* ----------- Status labels ----------- */
+.status-label {
+    -fx-text-fill: #6c7591;
+    -fx-font-size: 12px;
+}
+.status-error {
+    -fx-text-fill: #d64458;
+    -fx-font-weight: bold;
+}
+.status-success {
+    -fx-text-fill: #15885a;
+    -fx-font-weight: bold;
+}
+
+/* ----------- Tables ----------- */
+.data-table {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #e2e6ef;
+}
+.data-table .column-header-background {
+    -fx-background-color: #eef1fa;
+    -fx-background-radius: 12 12 0 0;
+}
+.data-table .column-header,
+.data-table .filler {
+    -fx-background-color: transparent;
+    -fx-size: 36;
+}
+.data-table .column-header .label {
+    -fx-text-fill: #2a3361;
+    -fx-font-weight: bold;
+}
+.data-table .table-row-cell:selected {
+    -fx-background-color: #d8e1ff;
+    -fx-text-fill: #1f2433;
+}
+
+.amenity-check {
+    -fx-text-fill: #2a3361;
+}
+
+/* ----------- Checkout ----------- */
+.total-amount {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #15885a;
+}
