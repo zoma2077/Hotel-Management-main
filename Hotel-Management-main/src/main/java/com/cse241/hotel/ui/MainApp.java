@@ -9,7 +9,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) {
-        // Ensure Phase 1 in-memory data is available to all controllers.
+        // Ensure  in-memory data is available to all controllers.
         HotelDatabase.seedDummyData();
 
         Navigator.init(stage);
