@@ -4,11 +4,7 @@ import java.util.Objects;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * Creates daemon threads with a readable name prefix.
- *
- * <p>Daemon threads ensure background JavaFX services do not prevent JVM shutdown.</p>
- */
+
 public final class DaemonThreadFactory implements ThreadFactory {
     private final String namePrefix;
     private final AtomicInteger counter = new AtomicInteger(1);

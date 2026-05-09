@@ -44,19 +44,12 @@ public final class Navigator {
         return stage;
     }
 
-    /**
-     * Loads the supplied FXML and replaces the current scene root.
-     *
-     * @return the controller instance (so callers can pass context)
-     */
+
     public static <T> T goTo(String fxmlPath) {
         return goTo(fxmlPath, null);
     }
 
-    /**
-     * Loads the supplied FXML and invokes {@code initializer} on the controller
-     * after construction (useful for passing data such as a selected reservation).
-     */
+
     public static <T> T goTo(String fxmlPath, Consumer<T> initializer) {
         Objects.requireNonNull(fxmlPath, "FXML path is required.");
         try {

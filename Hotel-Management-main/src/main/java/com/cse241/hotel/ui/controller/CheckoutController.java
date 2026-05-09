@@ -39,9 +39,9 @@ public class CheckoutController implements Initializable {
         methodChoice.getSelectionModel().select(PaymentMethod.CASH);
     }
 
-    /**
-     * Called by the previous screen to bind the reservation being paid for.
-     */
+
+    // Called by the previous screen to bind the reservation being paid for.
+
     public void setReservation(Reservation reservation) {
         this.reservation = reservation;
         reservationLabel.setText("Reservation #" + shorten(reservation.getReservationId()));

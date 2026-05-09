@@ -55,7 +55,7 @@ public final class HotelDatabase {
 
         Guest g1 = new Guest(
                 "Ahmed",
-                "Password1",
+                "Ahmed@2026",
                 LocalDate.now().minusYears(25),
                 new BigDecimal("500.00"),
                 "Downtown Street 1",
